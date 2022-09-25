@@ -109,17 +109,14 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles.css" />
-
-    <!-- Custom styles for this template -->
-    <link href="signin.css" rel="stylesheet" />
+    <link rel="stylesheet" href="public/css/styles.css" />
   </head>
   <body class="text-center">
     <main class="form-signin w-100 m-auto">
-      <form>
+      <form action="/" method="post">
         <img
           class="mb-4"
-          src="/images/newsletter.png"
+          src="public/images/newsletter.png"
           alt=""
           width="72"
           height="57"
@@ -132,6 +129,7 @@
             class="form-control top"
             id="floatingInput"
             placeholder="Max"
+            name="firstName"
           />
           <label for="floatingInput">First Name</label>
         </div>
@@ -141,6 +139,7 @@
             class="form-control middle"
             id="floatingInput"
             placeholder="Mustermann"
+            name="lastName"
           />
           <label for="floatingInput">Last Name</label>
         </div>
@@ -150,6 +149,7 @@
             class="form-control bottom"
             id="floatingInput"
             placeholder="name@example.com"
+            name="email"
           />
           <label for="floatingInput">Email address</label>
         </div>
